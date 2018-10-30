@@ -1,0 +1,308 @@
+ .col-1-of-3{
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 3.5rem;
+    color: black;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.287);
+    border-radius: 3px;
+
+}
+.card{
+    width: 100%;
+    height: 600px;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    padding-bottom: 0.7rem; 
+
+
+
+}
+.side-front{
+    height: 100%;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+    background-color: rgb(255, 255, 255);
+
+}
+.side-back{
+        height: 100%;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba(#000, .15);
+        transform: rotateY(180deg);
+        background-color: rgb(25, 119, 88);
+        background-image: linear-gradient(to right bottom, #ff00d4, #ff30dc65)
+
+
+
+} 
+
+.buy{
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    position: relative;
+    font-size: 3rem;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: #777;
+    margin-bottom: 30px;
+
+}
+.buy:active, .buy:focus {
+    outline: none;
+    -webkit-transform: translateY(-1px);
+    transform: translateY(-1px);
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+.buy:hover {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+.buy:hover::after {
+    -webkit-transform: scaleX(1.4) scaleY(1.6);
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+.buy::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+
+.card:hover .side-front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .side-back {
+    transform: rotateY(0);
+}
+
+
+.heading {
+    font-size: 2.7rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color:white;
+    position: absolute;
+    top: 30rem;
+    right: 2rem;
+    width: 75%;
+}
+.heading-span{
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 191, 0.233) , rgba(212, 33, 63, 0.425))
+}
+.card-details {
+    padding: 0.5rem;
+}
+.card-details li:last-child{
+ border-bottom: 0px 
+}
+
+.card-details ul {
+        list-style: none;
+        width: 100%;
+        margin: auto;
+}
+
+.card-details li {
+            text-align: left;
+            font-size: 2.5rem;
+            padding: 0.5rem;
+}
+.cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+}
+.price-box {
+    text-align: center;
+    color:white;
+    margin-bottom: 2rem;
+    font-size: 3.8rem;
+    
+}
+.price-only {
+    margin-top: 20px;
+    font-size: 3.8rem;
+    text-transform: uppercase;
+}
+.price-value {
+    font-size: 4rem;
+    font-weight: 100;
+    font-weight: 600
+}
+.card-picture img {
+    width: 100%;
+    background-size: 100% 100%;
+    height: 36rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;  
+}
+
+@media screen and (max-width: 1500px) and (hover: none) {
+    .card{
+        height: auto;
+        border-radius: 3px;
+        background-color: white;
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.192);    
+    }
+   
+    .card-picture img {
+        display: block;
+        background-size: 100% 100%;
+        height: 20rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;  
+    }
+    .side-front{
+        height: auto;
+        position: relative;
+        box-shadow: none;
+    }
+    .side-back{
+            display: inline-block;
+            height: auto;
+            position: relative;
+            box-shadow: none;
+            transform: rotateY(0);
+            clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+
+    }
+    .card:hover .side-front{
+        transform: rotateY(0);
+
+    }
+    .heading {
+        font-size: 1.9rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: right;
+        color:white;
+        position: absolute;
+        top: 20rem;
+        right: 1rem;
+        width: 75%;
+    }
+    .card-details{
+        padding: 0.5rem 0.5rem;
+        top: 0;
+        left: 0
+
+    }
+    .cta{
+        position: relative;
+        top: 0%;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 0.2rem ;
+    }
+    .price-box{
+        margin-bottom: 3rem;
+
+    }
+    .price-value{
+        font-size: 2rem;
+
+    }
+    .card-details ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+    
+    }
+
+    .card-details li {
+            text-align: center;
+            font-size: 2rem;
+            padding: 0.4rem;
+}
+.buy{
+    
+    padding: 0.5rem 0.7rem;
+    
+    font-size: 1.0rem;
+   
+}
+}
+@media screen and (max-width: 1600px) {
+   
+    .card-details li {
+        text-align: left;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+    .card-picture img {  
+        height: 26rem;      
+    }
+    .heading{
+        top: 50rem
+    }
+    .card-details li {
+        text-align: left;
+        font-size: 1.9rem;
+        padding: 0.5rem;
+    }
+
+    }
+@media screen and (max-width: 700px) {
+   
+.card-details li {
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.card-picture img {
+    
+    height: 12rem;
+    
+}
+.heading{
+    top: 14rem
+}
+}

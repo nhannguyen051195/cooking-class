@@ -1,0 +1,81 @@
+.contact-data-container{
+    widows: 100%;
+    height: 100%;
+    top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   position: absolute;
+   background-size: 100% 100%;
+   background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Vd3bj2jPe/videoblocks-kitchen-appliances-for-cooking-stop-motion-of-cooking-utensils-on-white-wooden-background-kitchen-utensils-for-cleaning-and-grinding-vegetables-move-on-white-table-utensils-for-cooking_bdwkb_ggz_thumbnail-full01.png')
+}
+
+
+.ContactData {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box;
+    top: 30%
+
+}
+.Button{
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    left: 50%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    color: #fff;
+    background-color: #b10b02;
+    border-color: #b10b02;
+    font-weight: 700;
+font-family: Arial, Helvetica, sans-serif
+
+
+}
+.Button-back{
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    left: 50%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    color: #fff;
+    background-color: #32d615ef;
+    border-color: #32d615ef;
+    font-weight: 700;
+font-family: Arial, Helvetica, sans-serif
+
+}
+.Button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+.Button-back:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
+@media (min-width: 600px) {
+    .ContactData {
+        width: 500px;
+    }
+}

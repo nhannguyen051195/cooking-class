@@ -1,0 +1,57 @@
+
+.header{  
+    height: 55vh;
+    background-image: url('https://cdg-linkparis.netdna-ssl.com/images/header/header_bg_paris_food3.jpg');
+;
+background-size: 100% 100%;
+background-position: top;
+position: relative;
+margin-left: 5rem;
+margin-right: 5rem;
+}
+.header__text-box{
+    position: absolute;
+    margin-top: 0;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-family: 'Mali', cursive;
+    background-image: linear-gradient(to bottom right, rgba(251, 255, 0, 0.233) , rgba(212, 33, 63, 0.294))
+}
+.heading-primary h1{
+    font-size: 40px;
+}
+@media screen and (min-width: 900px) {
+    .header{
+    height: 42rem;
+    }
+    }
+@media screen and (max-width: 900px) {
+.header{
+height: 30rem;
+}
+}
+@media screen and (max-width: 700px) {
+    .header{
+    height: 25rem;
+    }
+    }
+@media screen and (max-width: 500px) {
+.header{
+height: 20rem;
+margin-left: 0px;
+margin-right: 0px;
+}
+.heading-primary {
+            font-size: 25px
+}
+}  
+@media screen and (max-width: 400px) {
+   .header{
+       height: 17rem;
+   }
+
+} 
